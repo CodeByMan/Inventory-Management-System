@@ -1,0 +1,95 @@
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+*.key
+/auth.json
+
+# PHP and Composer dependencies
+/vendor/
+.phpunit.result.cache
+.phpunit.cache/
+.phpactor.json
+.php-cs-fixer.cache
+coverage/
+.phpunit.cache
+
+# Node dependencies and generated frontend assets
+/node_modules/
+/public/build/
+/public/hot
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Laravel generated files
+/public/storage
+/bootstrap/cache/*
+!/bootstrap/cache/.gitignore
+/storage/app/private/*
+!/storage/app/private/.gitignore
+/storage/app/public/*
+!/storage/app/public/.gitignore
+/storage/framework/cache/*
+!/storage/framework/cache/.gitignore
+/storage/framework/cache/data/*
+!/storage/framework/cache/data/.gitignore
+/storage/framework/sessions/*
+!/storage/framework/sessions/.gitignore
+/storage/framework/testing/*
+!/storage/framework/testing/.gitignore
+/storage/framework/views/*
+!/storage/framework/views/.gitignore
+/storage/logs/*
+!/storage/logs/.gitignore
+/storage/pail/
+/storage/api-docs/
+
+# Local databases
+/database/*.sqlite
+/database/*.sqlite-*
+/database/*.db
+
+# IDE and editor files
+/.fleet/
+/.idea/
+/.nova/
+/.vscode/
+/.zed/
+*.sublime-project
+*.sublime-workspace
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Temporary files, archives, and local backups
+*.log
+*.tmp
+*.temp
+*.bak
+*.backup
+*.orig
+*.swp
+*.swo
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+*-backup-*/
+test-backup-*/
+frontend-backup-*/
+
+# Local development tooling
+Homestead.json
+Homestead.yaml
+/.docker/
+
+# Generated reports
+junit.xml
+clover.xml
+phpunit-report.xml

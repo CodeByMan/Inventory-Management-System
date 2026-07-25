@@ -1,0 +1,3 @@
+@extends('layouts.app')
+@section('title','Reports | StockManager')
+@section('content')<h1>Reports</h1><div class="cards"><a class="panel card-link" href="{{ route('reports.low-stock') }}"><h2>Low stock</h2><p>Products at or below their minimum quantity.</p></a><a class="panel card-link" href="{{ route('reports.top-products') }}"><h2>Top products</h2><p>Products ranked by withdrawn quantity.</p></a><a class="panel card-link" href="{{ route('reports.history') }}"><h2>Movement history</h2><p>Filter the complete immutable stock ledger.</p></a><a class="panel card-link" href="{{ route('reports.stock-pdf') }}"><h2>PDF report</h2><p>Download a current inventory report.</p></a></div>@endsection

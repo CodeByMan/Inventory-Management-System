@@ -1,0 +1,17 @@
+{
+    "$schema": "https://www.schemastore.org/package.json",
+    "name": "stockmanager",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "description": "Frontend asset build for the StockManager Laravel portfolio project.",
+    "scripts": {
+        "build": "node scripts/build-assets.mjs",
+        "dev": "node --watch scripts/build-assets.mjs"
+    },
+    "engines": {
+        "node": ">=20"
+    },
+    "author": "Muhammad Ali Nawaz",
+    "license": "MIT"
+}

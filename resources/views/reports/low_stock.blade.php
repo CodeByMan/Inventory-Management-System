@@ -1,0 +1,3 @@
+@extends('layouts.app')
+@section('title','Low stock report | StockManager')
+@section('content')<div class="page-heading"><h1>Low stock report</h1><a href="{{ route('reports.index') }}">Back</a></div><div class="panel"><table><thead><tr><th>Product</th><th>SKU</th><th>Quantity</th><th>Minimum</th><th>Supplier</th></tr></thead><tbody>@forelse($products as $product)<tr><td><a href="{{ route('products.show',$product) }}">{{ $product->name }}</a></td><td>{{ $product->sku ?: '—' }}</td><td>{{ $product->quantity }}</td><td>{{ $product->minimum_quantity }}</td><td>{{ $product->supplier?->name ?: '—' }}</td></tr>@empty<tr><td colspan="5">No products are currently low on stock.</td></tr>@endforelse</tbody></table></div>{{ $products->links() }}@endsection
